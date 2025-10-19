@@ -71,7 +71,7 @@ Signed multiplication in two’s complement representation requires special hand
   
   - This guarantees correctness for all input combinations of defined widths.
 
-**xample Output**
+**Example Output**
 
                    0  |  A =  x  |  B =  x  |  P =   x
                    5  |  A =  0  |  B =  0  |  P =   0
