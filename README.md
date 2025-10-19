@@ -17,41 +17,41 @@ Overview
 
 **Inputs**
 
-  A : M-bit signed multiplicand
+  - A : M-bit signed multiplicand
   
-  B : N-bit signed multiplier
+  - B : N-bit signed multiplier
 
-Outputs
+**Outputs**
 
-  P : (M+N)-bit signed product
+  - P : (M+N)-bit signed product
 
 **Theory**
 
 Signed multiplication in two’s complement representation requires special handling of the most significant bits (MSBs):
 
- ** Partial Products**
+ **Partial Products**
 
-    Each bit of B is ANDed with each bit of A to generate a partial product.
+    - Each bit of B is ANDed with each bit of A to generate a partial product.
     
-    The MSBs of A and B are adjusted to handle negative numbers correctly.
+    - The MSBs of A and B are adjusted to handle negative numbers correctly.
     
-    Two’s Complement Adjustment:
+    - Two’s Complement Adjustment:
     
-    In two’s complement, negative numbers have the MSB set to 1.
+    -* In two’s complement, negative numbers have the MSB set to 1.
     
-    During multiplication, partial products involving MSBs are modified:
+    * During multiplication, partial products involving MSBs are modified:
     
-    If only one operand’s MSB is 1, invert the other operand’s bits.
+    * If only one operand’s MSB is 1, invert the other operand’s bits.
     
-    If both MSBs are involved, apply correction terms to avoid overflow.
+    * If both MSBs are involved, apply correction terms to avoid overflow.
     
-    After summing all partial products, additional correction terms are added to produce the correct signed product.
+    - After summing all partial products, additional correction terms are added to produce the correct signed product.
     
-    Final Product:
+    - Final Product:
     
-    The sum of shifted partial products plus correction terms gives the correctly signed result P.
+    * The sum of shifted partial products plus correction terms gives the correctly signed result P.
     
-    This ensures that multiplication works for all positive and negative inputs correctly.
+    * This ensures that multiplication works for all positive and negative inputs correctly.
 
 **Schematic**
 
@@ -61,15 +61,15 @@ Signed multiplication in two’s complement representation requires special hand
 
   The testbench verifies the signed multiplier by exhaustively testing all possible input combinations:
   
-  Loops over all values of A and B (both signed).
+  - Loops over all values of A and B (both signed).
   
-  Applies a small delay (#5) between each input combination.
+  - Applies a small delay (#5) between each input combination.
   
-  Monitors and prints the inputs and resulting product.
+  - Monitors and prints the inputs and resulting product.
   
-  Dumps simulation data to a .vcd file for waveform analysis.
+  - Dumps simulation data to a .vcd file for waveform analysis.
   
-  This guarantees correctness for all input combinations of defined widths.
+  - This guarantees correctness for all input combinations of defined widths.
 
 **xample Output**
 
@@ -140,11 +140,11 @@ Signed multiplication in two’s complement representation requires special hand
 
 **Features**
 
-  Fully parameterized (adjust M and N).
+  - Fully parameterized (adjust M and N).
   
-  Handles signed multiplication using two’s complement.
+  - Handles signed multiplication using two’s complement.
   
-  Exhaustive testbench for verification.
+  - Exhaustive testbench for verification.
   
-  Ready for FPGA or ASIC simulation and learning purposes.
+  - Ready for FPGA or ASIC simulation.
                    
