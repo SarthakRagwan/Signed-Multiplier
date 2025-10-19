@@ -4,14 +4,14 @@ Authior: Sarthak Kumar
 
 Overview
 
-This repository contains a parameterized signed multiplier written in Verilog.
-It multiplies two signed numbers of configurable widths using partial products and two’s complement handling for negative numbers. The design is modular, readable, and suitable for FPGA/ASIC implementation or learning purposes.
+  This repository contains a parameterized signed multiplier written in Verilog.
+  It multiplies two signed numbers of configurable widths using partial products and two’s complement handling for negative numbers. The design is modular, readable, and suitable for FPGA/ASIC implementation or    learning purposes.
 
 **Module: multiplier.v**
 
 **Parameters**
 
-  M : Width of the signed multiplicand A (default = 3)
+  - M : Width of the signed multiplicand A (default = 3)
   
   N : Width of the signed multiplier B (default = 2)
 
