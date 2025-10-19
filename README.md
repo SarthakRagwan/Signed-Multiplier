@@ -30,14 +30,14 @@ Overview
 Signed multiplication in two’s complement representation requires special handling of the most significant bits (MSBs):
 
  **Partial Products**
-
-    - Each bit of B is ANDed with each bit of A to generate a partial product.
+  
+  - Each bit of B is ANDed with each bit of A to generate a partial product.
     
-    - The MSBs of A and B are adjusted to handle negative numbers correctly.
+  - The MSBs of A and B are adjusted to handle negative numbers correctly.
     
-    - Two’s Complement Adjustment:
+  - Two’s Complement Adjustment:
     
-    -* In two’s complement, negative numbers have the MSB set to 1.
+    * In two’s complement, negative numbers have the MSB set to 1.
     
     * During multiplication, partial products involving MSBs are modified:
     
