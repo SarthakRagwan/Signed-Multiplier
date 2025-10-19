@@ -11,9 +11,9 @@ Overview
 
 **Parameters**
 
-  -M : Width of the signed multiplicand A (default = 3)
+  - M : Width of the signed multiplicand A (default = 3)
   
-  N : Width of the signed multiplier B (default = 2)
+  - N : Width of the signed multiplier B (default = 2)
 
 **Inputs**
 
