@@ -47,7 +47,7 @@ Signed multiplication in two’s complement representation requires special hand
     
     - After summing all partial products, additional correction terms are added to produce the correct signed product.
     
-    - Final Product:
+- Final Product:
     
     * The sum of shifted partial products plus correction terms gives the correctly signed result P.
     
